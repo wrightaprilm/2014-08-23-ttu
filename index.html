@@ -12,7 +12,8 @@ latlng: 41.7901128,-87.6007318
 registration: restricted
 instructor: ["April Wright", "John Fonner"] 
 helper: ["Eric Bruning"]
-contact: ["eric.bruning@ttu.edu" ["wright.aprilm@utexas.edu"]
+contact: ["eric.bruning@ttu.edu", "wright.aprilm@utexas.edu"]
+page.eventbrite: texas-tech-software-carpentry-bootcamp-registration-12177881371
 ---
 <!--
     Edit the values in the parameter block above to be appropriate for your bootcamp.
@@ -22,9 +23,9 @@ contact: ["eric.bruning@ttu.edu" ["wright.aprilm@utexas.edu"]
 <!--
     This block includes the Eventbrite registration widget if 'eventbrite' has been set in the header.
 -->
-
-<iframe src="//www.eventbrite.com/e/texas-tech-software-carpentry-bootcamp-registration-12177881371" frameborder="0" width="100%" scrolling="auto"></iframe>
-
+{% if page.eventbrite %}
+<iframe src="//www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" width="100%" scrolling="auto"></iframe>
+{% endif %}
 
 <h2>General Information</h2>
 
